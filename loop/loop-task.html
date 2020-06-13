@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">    
+        <title>Loop Practice</title>
+    </head>
+    <body>
+        <p>Task 1: Last loop value</p>
+        <div id="output-task1"></div>
+        <p>Task 2: Which values does the while loop show?</p>
+        <div id="output-task2"></div>
+        <p>Task 3: Which values get shown by the "for" loop?</p>
+        <div id="output-task3"></div>
+        <p>Task 4: Output even numbers in the loop</p>
+        <div id="output-task4"></div>
+        <p>Task 5: Replace "for" with "while"</p>
+        <div id="output-task5"></div>
+        <p>Task 6: Repeat until the input is correct</p>
+        <div id="output-task6"></div>
+        <p>Task 7: Output prime numbers</p>
+        <div id="output-task7"></div>
+        <script>
+            // Task 1
+            // let i = 3;
+
+            // let i = 3;
+            // alert(i--); // shows 3, decreases i to 2
+
+            // alert(i--) // shows 2, decreases i to 1
+
+            // alert(i--) // shows 1, decreases i to 0
+
+            // // done, while(i) check stops the loop
+ 
+            // while (i) {
+            //     alert(i--);
+            // }
+            // document.getElementById("output-task1").innerHTML = i;
+
+            // Task 2
+            // let i = 0;
+            // while (i++ < 5) alert( i );
+            // document.getElementById("output-task2").innerHTML = i;
+
+            // Task 3
+
+            // for (let i = 0; i < 5; ++i) alert( i );
+
+            // Task 4
+
+            // let i = 0;
+            // for (i; i <= 10; i +=2) alert( i );
+            // for (let i = 2; i <= 10; i++) {
+            //     if (i % 2 == 0) {
+            //         alert(i);
+            //     }
+            // }
+
+            // for (let i = 0; i < 3; i++) {
+            //     alert( `number ${i}!` );
+            // }
+
+            // Task 5
+
+            // let i = 0;
+            // while (i < 3) {
+            //     alert(`number ${i++}!`);
+            // }
+
+            // Task 6
+
+            // let i = 100;
+            // while (i <= 100)
+            // {
+            //     i = prompt("Enter a number:");
+            // }
+            //solution
+            // let num;
+
+            // do {
+            //     num = prompt("Enter a number greater than 100?", 5);
+            // } while (num <= 100 && num);
+
+            // Task 7
+
+            // let n = prompt("Enter a number even or greater than 2", 0);
+
+            // nextPrime:
+            // for (let i = 2; i <= n; i++) { // for each i...
+
+            // for (let j = 2; j < i; j++) { // look for a divisor..
+            //     if (i % j == 0) continue nextPrime; // not a prime, go next i
+            // }
+
+            // alert( i ); // a prime
+            // }
+
+        </script>
+    </body>
+</html>
