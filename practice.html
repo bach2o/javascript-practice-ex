@@ -18,58 +18,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<h1>
-    THE TITLE OF YOUR WEBPAGE
-</h1>
-<div id = "container">
 
-</div>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+
 <script>
-    const container = document.querySelector('#container');
-
-    const content = document.createElement('div');
-    content.classList.add('content');
-    content.classList.add('sd');
-    content.textContent = 'This is the glorious text-content!';
-
-    container.appendChild(content);
-
-    // add elementes using only Javascript
-    // a <p> with red text says "Hey I;m red"
-    var p = document.createElement('p');
-    p.classList.add('#redP');
-    p.textContent = "Hey I'm red!";
-    p.setAttribute('style', 'color: red');
-    container.appendChild(p);
-
-    // an <h3> with blue text that says "Im a blue h3"
-
-    var h = document.createElement('h3');
-    h.id = "blueH3";
-    h.textContent = "I'm a blue h3";
-    h.setAttribute('style', 'color: blue');
-    container.appendChild(h);
-
-    var h = document.createElement('h3');
-    h.classList.add('#redH3');
-    h.textContent = "I'm a red h3";
-    h.setAttribute('style', 'color: red');
-    container.appendChild(h);
-
-    // h1 and p inside another div, which is inside container
-
-    var h = document.createElement('h1');
-    h.textContent = "I'm in a div";
-
-    var p = document.createElement('p');
-    p.textContent = "ME TOO!";
-
-    var content2 = document.createElement('div');
-    content2.classList.add('content2');
-    content2.setAttribute('style', 'background: pink; border: black');
-    content2.appendChild(h);
-    content2.appendChild(p);
-    container.appendChild(content2);
+    let paragraphs = document.body.getElementsByTagName("p");
+    document.body.insertBefore(paragraphs[2], paragraphs[0]);
     
 
 </script>
