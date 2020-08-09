@@ -43,8 +43,8 @@
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
-    const fullNames = inventors.map(inventor => inventor.first + " " + inventor.last);
-    console.log(fullNames);
+    const fullNames = inventors.map(inventor => inventor.first + " " + inventor.last + " was born in " + inventor.year + " and passed away in " + inventor.passed);
+    console.table(fullNames);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
@@ -62,6 +62,7 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    // const reducer = (accumulator, currentValue) => accumulator + currentValue
     const totalYears = inventors.reduce((total, inventor) => {
       return total + (inventor.passed - inventor.year);
     }, 0);
@@ -103,7 +104,7 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
     const transportation = data.reduce(function(obj, item) {
-      if(!obj[item]) {
+      if(!obj[item]) { // if there's no object item, create one. For example, the object currently does not have "car", so it will create car and set it at 0
         obj[item] = 0;
       }
       obj[item]++;
