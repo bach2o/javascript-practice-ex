@@ -24,31 +24,17 @@
     <p>three</p>
 
 <script>
-    function caesar(str, a) {
-        const upperAlphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-        let lowerAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');;
-        let splitString = str.split("");
-        console.log(splitString);
-        let temp = [];
-        for (i = 0; i < splitString.length; i++) {
-            console.log(i);
-            for (j = 0; j < upperAlphabet.length; j++) {
-                if (upperAlphabet[j] === splitString[i]) {
-                    console.log("yes");
-                    console.log(upperAlphabet[j]);
-                    temp[i] = upperAlphabet[j + a];
-                } else if (lowerAlphabet[j] === splitString[i]) {
-                    temp[i] = lowerAlphabet[j + a];
-                }
-            }
-        }
-         temp = temp.join("");
-         return temp;
-      
-}
-    console.log(caesar('ab,  cd!, as', 3));
-
-
+    let array = [{
+        title: 'Book',
+        author: 'Name'
+      },
+      {
+        title: 'Book2',
+        author: 'Name2'
+      }]
+    bookTitles = [];
+    bookTitles = array.map(book => book.title);
+    console.log(bookTitles);
 </script>
 
 </body>
